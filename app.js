@@ -1,5 +1,5 @@
 const express = require('express')
-const fs= require('fs')
+const fs = require('fs')
 const path = require('path')
 const mongoose = require('mongoose')
 const bcrypt  = require('bcrypt')
@@ -21,7 +21,7 @@ app.listen(process.env.PORT)
 app.set('views',path.join(__dirname,'views'))
 app.set('view engine','ejs')
 
-const url = process.env.MONGOURL//"mongodb+srv://rmsack:Test123@cluster0.wkjsdpu.mongodb.net/cw151?retryWrites=true&w=majority&appName=Cluster0"
+const url = process.env.MONGOULR//"mongodb+srv://rmsack:Test123@cluster0.wkjsdpu.mongodb.net/cw151?retryWrites=true&w=majority&appName=Cluster0"
 
 
 app.use(express.urlencoded({extended:true}))
